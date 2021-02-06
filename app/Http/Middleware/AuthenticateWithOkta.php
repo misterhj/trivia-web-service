@@ -43,10 +43,12 @@ class AuthenticateWithOkta
 
             // Setup the JWT Verifier
             $jwtVerifier = (new \Okta\JwtVerifier\JwtVerifierBuilder())
-                            ->setAdaptor(new \Okta\JwtVerifier\Adaptors\SpomkyLabsJose())
+                            ->setAdaptor(new \Okta\JwtVerifier\Adaptors\FirebasePhpJwt())
+            #$jwtVerifier = (new \Okta\JwtVerifier\JwtVerifierBuilder())
+            #                ->setAdaptor(new \Okta\JwtVerifier\Adaptors\SpomkyLabsJose())
                             ->setAudience('api://default')
-                            ->setClientId('{YOUR_CLIENT_ID}')
-                            ->setIssuer('{YOUR_ISSUER_URL}')
+                            ->setClientId('0oa5be2guyBBB1Y6b5d6')
+                            ->setIssuer('https://dev-08559668.okta.com/oauth2/default')
                             ->build();
 
             // Verify the JWT from the Authorization Header.

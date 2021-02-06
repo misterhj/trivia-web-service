@@ -9,9 +9,9 @@ import Home from './Home'
 import Trivia from './Trivia'
 
 const config = {
-  issuer: 'https://dev-08559668.okta/oauth2/default',
+  issuer: 'https://dev-08559668.okta.com/oauth2/default',
   redirect_uri: window.location.origin + '/implicit/callback',
-  client_id: '08559668'
+  client_id: '0oa5be2guyBBB1Y6b5d6'
 }
 
 class App extends Component {

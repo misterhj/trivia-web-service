@@ -3,6 +3,9 @@
 /public/storage
 /storage/*.key
 /vendor
+
+/trivia-web-client-react/package-lock.json
+
 .env
 .env.backup
 .phpunit.result.cache
